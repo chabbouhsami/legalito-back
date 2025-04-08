@@ -1,6 +1,6 @@
 package com.legalito.controller;
 
-import com.legalito.model.Users;
+import com.legalito.model.entity.Users;
 import com.legalito.repository.UsersRepository;
 import com.legalito.service.JwtService;
 import lombok.RequiredArgsConstructor;

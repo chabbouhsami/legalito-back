@@ -1,6 +1,6 @@
 package com.legalito.service;
 
-import com.legalito.model.Users;
+import com.legalito.model.entity.Users;
 import io.jsonwebtoken.*;
 import io.jsonwebtoken.io.Decoders;
 import io.jsonwebtoken.security.Keys;

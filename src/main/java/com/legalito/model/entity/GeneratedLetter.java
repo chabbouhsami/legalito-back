@@ -1,4 +1,4 @@
-package com.legalito.model;
+package com.legalito.model.entity;
 
 import jakarta.persistence.*;
 import lombok.*;

@@ -1,4 +1,4 @@
-package com.legalito.model;
+package com.legalito.model.entity;
 
 import jakarta.persistence.*;
 import lombok.*;
@@ -10,17 +10,12 @@ import java.time.LocalDateTime;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder(toBuilder = true)
-public class Template {
+public class Users {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
-    private String title;
-    private String slug;
-
-    @Column(columnDefinition = "TEXT")
-    private String contentTemplate;
-
-    private String language;
+    private String email;
+    private String passwordHash;
+    private boolean isPremium;
     private LocalDateTime createdAt;
 }

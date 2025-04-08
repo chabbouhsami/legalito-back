@@ -1,6 +1,6 @@
 package com.legalito.service;
 
-import com.legalito.model.Users;
+import com.legalito.model.entity.Users;
 import com.legalito.repository.UsersRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.userdetails.*;

@@ -1,6 +1,6 @@
 package com.legalito.repository;
 
-import com.legalito.model.Users;
+import com.legalito.model.entity.Users;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;

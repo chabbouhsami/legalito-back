@@ -1,4 +1,4 @@
-
+DROP TABLE IF EXISTS template
 CREATE TABLE users (
     id SERIAL PRIMARY KEY,
     email VARCHAR(255) NOT NULL,
@@ -6,7 +6,7 @@ CREATE TABLE users (
     is_premium BOOLEAN DEFAULT FALSE,
     created_at TIMESTAMP
 );
-
+DROP TABLE IF EXISTS public.template
 CREATE TABLE templates (
     id SERIAL PRIMARY KEY,
     title VARCHAR(255) NOT NULL,
@@ -15,7 +15,7 @@ CREATE TABLE templates (
     language VARCHAR(50),
     created_at TIMESTAMP
 );
-
+DROP TABLE IF EXISTS public.generated_letter
 CREATE TABLE generated_letter (
     id SERIAL PRIMARY KEY,
     user_id INTEGER REFERENCES users(id),
